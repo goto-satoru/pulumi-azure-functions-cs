@@ -1,0 +1,21 @@
+{
+    "name": "COR_ENABLE_PROFILING",
+    "value": "1",
+    "slotSetting": false
+  },
+  {
+    "name": "COR_PROFILER",
+    "value": "{39AEABC1-56A5-405F-B8E7-C3668490DB4A}",
+    "slotSetting": false
+  },
+  {
+    "name": "COR_PROFILER_PATH_32",
+    "value": "D:\\home\\SiteExtensions\\AppDynamics.WindowsAzure.SiteExtension.4.5.Release\\AppDynamics\\AppDynamics.Profiler_x86.dll",
+    "slotSetting": false
+  },
+  {
+    "name": "COR_PROFILER_PATH_64",
+    "value": "D:\\home\\SiteExtensions\\AppDynamics.WindowsAzure.SiteExtension.4.5.Release\\AppDynamics\\AppDynamics.Profiler_x64.dll",
+    "slotSetting": false
+  },
+ 
