@@ -1,5 +1,3 @@
-[![Deploy](https://get.pulumi.com/new/button.svg)](https://app.pulumi.com/new)
-
 # Azure Functions
 
 Azure Functions created from deployment packages in C# and deployed to a Consumption Plan on Windows.
