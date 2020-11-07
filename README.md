@@ -18,31 +18,31 @@ To deploy your infrastructure, follow the below steps.
 1.  Create a new stack:
 
     ```
-    $ pulumi stack init dev
+    pulumi stack init dev
     ```
 
 1.  Login to Azure CLI (you will be prompted to do this during deployment if you forget this step):
 
     ```
-    $ az login
+    az login
     ```
 
 1.  Build and publish the Functions project:
 
     ```
-    $ dotnet publish functions
+    dotnet publish functions
     ```
 
 1.  Configure the location to deploy the resources to:
 
     ```
-    $ pulumi config set azure:location <location>
+    pulumi config set azure:location JapanEast
     ```
 
 1.  Run `pulumi up` to preview and deploy changes:
 
     ```
-    $ pulumi up
+    pulumi up
     Previewing update (dev):
     ...
 
@@ -56,9 +56,9 @@ To deploy your infrastructure, follow the below steps.
 1.  Check the deployed function endpoints:
 
     ```
-    $ pulumi stack output Endpoint
+    pulumi stack output Endpoint
     https://app1a2d3e4d.azurewebsites.net/api/Hello?name=Pulumi
-    $ curl "$(pulumi stack output Endpoint)"
+    curl "$(pulumi stack output Endpoint)"
     Hello, Pulumi
     ```
 
@@ -67,6 +67,6 @@ To deploy your infrastructure, follow the below steps.
 1. Once you've finished experimenting, tear down your stack's resources by destroying and removing it:
 
     ```bash
-    $ pulumi destroy --yes
-    $ pulumi stack rm --yes
+    pulumi destroy --yes
+    pulumi stack rm --yes
     ```
