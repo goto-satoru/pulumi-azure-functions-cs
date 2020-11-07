@@ -1,4 +1,4 @@
-# Deploy C# Azure Functions using Pulumi
+# Deploy C# Azure Function using Pulumi
 
 Azure Functions created from deployment packages in C# and deployed to a Consumption Plan on Windows.
 
