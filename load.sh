@@ -3,6 +3,6 @@ ENDPOINT="$(pulumi stack output Endpoint)"
 while true
 do
  date
- curl -s $ENDPOINT
+ curl -w '\n' -s $ENDPOINT
  sleep 10
 done
