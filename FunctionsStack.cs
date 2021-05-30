@@ -10,7 +10,7 @@ class FunctionsStack : Stack
 {
     public FunctionsStack()
     {
-        var resourceGroup = new ResourceGroup("functions-pulumi-");
+        var resourceGroup = new ResourceGroup("func-pulumi-");
 
         var storageAccount = new Account("sa", new AccountArgs
         {
