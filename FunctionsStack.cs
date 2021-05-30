@@ -46,7 +46,7 @@ class FunctionsStack : Stack
 
         var codeBlobUrl = SharedAccessSignature.SignedBlobReadUrl(blob, storageAccount);
 
-        var app = new FunctionApp("csharp-aps-", new FunctionAppArgs
+        var app = new FunctionApp("csharp-", new FunctionAppArgs
         {
             ResourceGroupName = resourceGroup.Name,
             AppServicePlanId = appServicePlan.Id,
@@ -60,7 +60,7 @@ class FunctionsStack : Stack
             Version = "~3"
         });
 
-        this.Endpoint = Output.Format($"https://{app.DefaultHostname}/api/Hello?name=Pulumi");
+        this.Endpoint = Output.Format($"https://{app.DefaultHostname}/api/Hello?name=AppDynamics");
     }
 
     [Output] public Output<string> Endpoint { get; set; }
