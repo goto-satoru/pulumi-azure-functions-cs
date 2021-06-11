@@ -1,6 +1,6 @@
 # Deploy C# Azure Function using Pulumi
 
-Azure Functions created from deployment packages in C# and deployed to a Consumption Plan on Windows.
+Azure Functions in C# and deployed to a Consumption Plan on Windows.
 
 ## Deploying the App
 
@@ -10,6 +10,7 @@ To deploy your infrastructure, follow the below steps.
 
 1. [Install Pulumi](https://www.pulumi.com/docs/get-started/install/)
 2. [Install .NET Core 3.0+](https://dotnet.microsoft.com/download)
+3. Azure CLI(https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 ### Steps
 
@@ -40,27 +41,15 @@ To deploy your infrastructure, follow the below steps.
 1.  Run `pulumi up` to preview and deploy changes:
 
     ```
-    pulumi up
-    Previewing update (dev):
-    ...
-
-    Updating (dev):
-    ...
-    Resources:
-        + 7 created
-    Duration: 2m42s
+    pulumi up --yes
     ```
 
 1.  Check the deployed function endpoints:
 
     ```
-    pulumi stack output Endpoint
-    https://app1a2d3e4d.azurewebsites.net/api/Hello?name=Pulumi
     curl "$(pulumi stack output Endpoint)"
     Hello, Pulumi
     ```
-
-1. From there, feel free to experiment. Simply making edits and running `pulumi up` will incrementally update your stack.
 
 1. Once you've finished experimenting, tear down your stack's resources by destroying and removing it:
 
