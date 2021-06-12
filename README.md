@@ -1,3 +1,5 @@
+[![Deploy](https://get.pulumi.com/new/button.svg)](https://app.pulumi.com/new)
+
 # Deploy C# Azure Function using Pulumi
 
 Azure Functions in C# and deployed to a Consumption Plan on Windows.
